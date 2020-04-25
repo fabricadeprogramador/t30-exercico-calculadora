@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <script>
+        function somar() {
+            let n1 = parseInt(document.body.children[1].children[0].value)
+            let n2 = parseInt(document.body.children[2].children[0].value)
+            let s = n1 + n2
+            window.alert(s)
+        }
+    </script>
 </head>
 
 <body>
@@ -12,7 +20,7 @@
     <div> <input placeholder="Número 1" type="number"></div>
     <div> <input placeholder="Número 2" type="number"></div>
     <div>
-        <button>+</button>
+        <button onclick="somar()">+</button>
         <button>-</button>
         <button>*</button>
         <button>/</button>
